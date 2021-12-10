@@ -1,10 +1,10 @@
 import React from "react";
-import Login from "./components/views/auth/login";
-import Register from "./components/views/auth/register";
-import Products from "./products/products";
+import Login from "./Component/Vews/Auth/login";
+import Register from "./Component/Vews/Auth/Register";
+import Product from "./Products/Product";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import ProductDetails from "./products/productdetails";
+import ProductDetails from "./Products/productdetails";
 function App() {
   return (
     <div className="App">
@@ -23,8 +23,10 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/products/details/:id" element={<ProductDetails />} />
-          <Route path="/" element={<Products />} />
+          <Route path="/product/create" element={<ProductForm />} />
+          <Route path="/product/edit/:id" element={<ProductForm />} />
+          <Route path="/product/details/:id" element={<ProductDetails />} />
+          <Route path="/" element={<Product />} />
         </Routes>
       </Router>
     </div>

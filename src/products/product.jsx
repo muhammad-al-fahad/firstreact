@@ -1,5 +1,5 @@
 import React from "react";
-import SingleProduct from "./singleproduct";
+import SingleProduct from "./SingleProduct";
 import axios from "axios";
 const Products = () => {
   const [products, setProducts] = React.useState([]);

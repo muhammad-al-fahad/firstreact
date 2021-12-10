@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Counter from "./Component/examples/counter";
-import CounterSrtatus from "./Component/examples/counterstatus";
+import Counter from "./Component/Examples/Counter";
+import CounterSrtatus from "./Component/Examples/CounterStatus";
 
 function App() {
   const [count, setCount] = React.useState(8);
@@ -27,7 +27,7 @@ function App() {
         setCount={setCount}
       />
       <hr />
-      <CounterSrtatus count={count} />
+      <CounterStatus count={count} />
       {/* <Counter color="orange" initialValue="66" /> */}
     </div>
   );
